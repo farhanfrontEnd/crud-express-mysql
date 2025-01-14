@@ -23,7 +23,10 @@ db.connect((err) => {
   console.log("Berhasil connect to database");
 });
 
-app.get("/", (req, res) => {
+app.get("/dashboard-page", (req, res) => {
+  res.render("home");
+});
+app.get("/admin-page", (req, res) => {
   res.render("home");
 });
 
