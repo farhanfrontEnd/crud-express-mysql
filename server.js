@@ -26,7 +26,8 @@ db.connect((err) => {
 app.get("/dashboard", (req, res) => {
   res.render("home");
 });
-app.get("/admin", (req, res) => {
+
+app.get("/admin-page", (req, res) => {
   res.render("home");
 });
 
